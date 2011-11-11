@@ -11,18 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.file_field :media %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <fieldset>
+    <div class="clearfix">
+      <%= f.label :title %>
+      <div class="input"><%= f.text_field :title %></div>
+    </div>
+    <div class="clearfix">
+      <%= f.label :description %>
+      <div class="input"><%= f.text_area :description, :rows => "3", :columns => "" %></div>
+    </div>
+    <div class="clearfix">
+      <div class="input"><%= f.file_field :media %></div>
+    </div>
+    <div class="actions">
+      <input type="submit" value="Save changes" class="btn primary">
+      <%= link_to 'Cancel', articles_path, :class => "btn" %>
+    </div>
+  </fieldset>
 <% end %>

@@ -8,6 +8,7 @@ gem 'rails', '3.1.0'
 gem 'sqlite3'
 
 gem 'paperclip'
+gem 'twitter-bootstrap-rails'
 
 
 # Gems used only for assets and not required
